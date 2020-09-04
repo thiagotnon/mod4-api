@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: 'https://mod4-frontend.herokuapp.com',
+    origin: 'https://happy-kirch-d0e4f4.netlify.app',
   })
 );
 
