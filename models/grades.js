@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-
 const gradeSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -20,10 +19,7 @@ const gradeSchema = new mongoose.Schema({
   lastModified: {
     type: Date,
     require: true
-  },
-  toJSON: {
-    virtuals: true 
-  } 
+  }
 });
 
 export default mongoose.model('Grades', gradeSchema);
