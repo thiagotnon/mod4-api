@@ -21,6 +21,9 @@ const gradeSchema = new mongoose.Schema({
     type: Date,
     require: true
   },
+  toJSON: {
+    virtuals: true 
+  } 
 });
 
 export default mongoose.model('Grades', gradeSchema);
