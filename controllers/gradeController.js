@@ -13,7 +13,7 @@ const create = async (req, res) => {
       lastModified: new Date(),
     });
 
-    res.send({ message: 'Grade inserido com sucesso' });
+    res.send({ message: 'Grade inserido com sucesso na base de dados.' });
     logger.info(`POST /grade - ${JSON.stringify()}`);
   } catch (error) {
     res
